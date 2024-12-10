@@ -1,0 +1,206 @@
+/* 기본 스타일 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 30px; */
+  position: relative;
+  background-color: #2F2D2C;
+  height: 100px;
+}
+
+header a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 텍스트 색상을 부모 요소와 동일하게 */
+}
+
+header a:hover {
+  color: #007bff; /* 선택 사항: 호버 시 색상 */
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+/* 메뉴 기본 스타일 */
+.menu-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+  color: white;
+}
+
+.menu-left {
+  justify-content: flex-start;
+  margin-left: 30px;
+  background-color: #2F2D2C;
+}
+
+.menu-right {
+  justify-content: flex-end;
+  margin-right: 20px;
+  background-color: #2F2D2C;
+}
+
+.hamburger-menu {
+  display: none; /* 데스크톱에서는 숨김 */
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  z-index: 1;
+}
+
+.search-btn {
+  cursor: pointer;
+}
+
+/* 검색 모달 */
+.search-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.search-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-content input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search-content .close-btn {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wearfund-logo {
+  width: 100%; /* 원하는 크기로 설정 */
+  height: auto;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+    position: static;
+    transform: none;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .menu-left,
+  .menu-right {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* 메뉴가 한 줄을 차지하도록 설정 */
+    margin: 0;
+    padding: 10px;
+  }
+
+}
+
+
+
+/* @media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .logo {
+    position: static;
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .menu-left {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background-color: #ebebeb;
+    z-index: 1;
+  }
+  .menu-left.span {
+    background-color: #555555;
+    padding: 20px;
+  }
+  .menu-left.mobile-open {
+    display: flex;
+    z-index: 2;
+  }
+
+  .menu-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 190px;
+    background-color: #ebebeb;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .menu-right.mobile-open {
+    display: flex;
+    z-index: 2;
+  }
+
+
+
+
+} */

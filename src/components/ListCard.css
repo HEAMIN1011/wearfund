@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.cardbox{
+    width: 200%;
+    height: 100%;
+    position: relative;
+}
+
+.imageSize{
+    width: 100%;
+    height: 320px;
+    object-fit: cover; /*사진 비율맞춰주는 함수*/
+}
+
+.titleFont{
+    font-size: 17px;
+    font-weight: bold;
+    height: 25px;
+}
+
+.contentSize{
+    height: 80px;
+}
+
+.priceFont{
+    color: slateblue;
+    font-size: 18px;
+    font-weight: bold;
+}

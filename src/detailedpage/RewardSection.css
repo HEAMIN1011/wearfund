@@ -1,0 +1,141 @@
+/* 공통 스타일 */
+.reward-section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.reward-card {
+  margin-bottom: 20px;
+}
+
+.reward-options {
+  margin-bottom: 20px;
+}
+
+#reward-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.selected-option-details {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.selected-option-details h4 {
+  margin-bottom: 10px;
+}
+
+/* 선택한 리워드 헤더 */
+.selection-header {
+  display: flex; /* Flexbox 사용 */
+  align-items: center; /* 수직 정렬 */
+  justify-content: space-between; /* 양쪽 정렬 */
+  gap: 10px; /* 요소 간 간격 */
+}
+
+.selected-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 버튼 스타일 */
+.delete-button {
+  font-size: 12px;
+  background-color: #dddddd;
+  color: #949494;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.delete-button:hover {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+/* 리워드 액션 버튼 */
+.reward-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.action-button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-button.primary {
+  background-color: #9d92b6;
+  color: white;
+}
+
+.action-button.primary:hover {
+  background-color: #ada3c2;
+}
+
+.action-button:hover {
+  background-color: #f1f1f1;
+}
+
+/* 하트 스타일 */
+.heart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.heart-container:hover {
+  background-color: #ffecec;
+}
+
+.heart-icon {
+  font-size: 16px;
+  color: #ff4d4f;
+  margin-right: 5px;
+}
+
+.heart-count {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 헤더 행 스타일 */
+.header-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 하트와 제목 사이 간격 */
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.supporters {
+  margin: 0;
+  font-size: 12px;
+  color: #555;
+}
