@@ -1,7 +1,12 @@
+/* 전체 레이아웃 조정 */
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 전체 화면 높이를 채움 */
   text-align: center;
 }
 
+/* 로고 스타일 */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,21 +18,57 @@
   }
 }
 
+/* 헤더 스타일 */
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  padding: 20px;
+  color: white;
+}
+
+/* 메인 콘텐츠 영역 */
+.content {
+  flex: 1; /* 헤더와 푸터 사이에 공간 확장 */
+  padding: 20px;
+  background-color: #f9f9f9; /* 콘텐츠 배경색 */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
+/* 링크 스타일 */
 .App-link {
   color: #61dafb;
 }
 
+/* 푸터 스타일 */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* 로고 회전 애니메이션 */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
