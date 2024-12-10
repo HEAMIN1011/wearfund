@@ -1,0 +1,31 @@
+.back {
+    margin: 10px 25px 0px 25px;
+    background-image: url(./image/b4.jpg);
+    background-position: center;
+    background-size: 49%;
+    background-repeat: no-repeat;
+    background-color: #311708;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxBack {
+    margin: 10px;
+    width: 23%;
+    height: 100%;
+    padding: 2px;
+}
+
+.boxNav {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 100%;
+}
+.white {
+    color: white;
+    font-size: 12px;
+    font-weight:normal;
+}
