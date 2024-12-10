@@ -12,6 +12,7 @@ const VERIFICATION_CODE_LENGTH = 6;
 
 
 function Register() {
+    
     const [email, setEmail] = useState('');
     const [pn, setPn] = useState('');
     const [id, setId] = useState('');
@@ -54,7 +55,7 @@ function Register() {
     };
 
     useEffect(() => {
-        let interval : numbers;
+        let interval;
         if (verificationSent) {
             interval = window.setInterval(() => {
                 setTimer((prevTimer) => {
