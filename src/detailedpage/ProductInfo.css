@@ -1,0 +1,143 @@
+.product-info {
+    flex: 1;
+    /* padding: 20px; */
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+  }
+  
+  /* .price {
+    margin: 10px 0;
+    font-size: 18px;
+  } */
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .discounted-price {
+    color: #916ce7;
+    font-weight: bold;
+  }
+  
+  .coupon-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    background: #888;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .gift-button,
+  .buy-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gift-button {
+    background: #6c757d;
+    color: white;
+  }
+  
+  .buy-button {
+    background: #28a745;
+    color: white;
+  }
+  .product-info {
+    padding: 20px;
+  }
+  
+  .price {
+    margin-bottom: 10px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+  }
+  
+  .discounted-price {
+    color: #a492cc;
+    font-weight: bold;
+  }
+  
+  .coupon-button {
+    background-color: #b3a6cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+  
+  .coupon-button:hover {
+    background-color: #c2c2c2;
+  }
+  
+  .delivery-info {
+    /* margin-top: 10px; */
+    color: #555;
+  }
+  
+  .reward-points {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* 모달 스타일 */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .modal-content p {
+    margin-bottom: 20px;
+  }
+  
+  .close-button {
+    padding: 5px;
+    background-color: #adadad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #8a8a8a;
+  }
+  
