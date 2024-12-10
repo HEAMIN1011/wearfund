@@ -54,9 +54,9 @@ function Register() {
     };
 
     useEffect(() => {
-        let interval: NodeJS.Timeout;
+        let interval: numbers;
         if (verificationSent) {
-            interval = setInterval(() => {
+            interval = window.setInterval(() => {
                 setTimer((prevTimer) => {
                     if (prevTimer <= 1) {
                         clearInterval(interval);
@@ -67,7 +67,6 @@ function Register() {
                 });
             }, 1000);
         }
-
         return () => clearInterval(interval);
     }, [verificationSent]);
 
@@ -116,20 +115,11 @@ function Register() {
     const sendVerification = () => {
         if (pn.length < 10) return;
         setVerificationSent(true);
-
-        // 인증번호 전송하는 로직
     };
 
-    // // 인증번호 재전송 함수
-    // const resendVerification = () => {
-    //     // 인증번호 재전송하는 로직
-    // };
 
-    // // 인증번호 확인 함수
-    // const verifyCode = () => {
-    //     // 인증번호 확인하는 로직
-    // };
 
+    //정규식 코드
     const handleEmail = (e) => {
         setEmail(e.target.value);
         const regex = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
@@ -172,6 +162,7 @@ function Register() {
             <div className='titleWrap'>
                 이메일, 전화번호, 아이디, 비밀번호를 <br /> 입력해주세요
             </div>
+            {/* 이메일 부분 */}
             <div className="contentWrap">
                 <div className="inputTitle">이메일 주소</div>
                 <div className="inputWrap">
@@ -183,13 +174,13 @@ function Register() {
                         onChange={handleEmail}
                     />
                 </div>
-
                 <div className="errorMessageWrap">
                     {!emailValid && email.length > 0 && (
                         <div>올바른 이메일을 입력해주세요.</div>
                     )}
                 </div>
 
+                {/* 전화번호 부분 */}
                 <div style={{ marginTop: "26px" }} className="inputTitle">전화번호</div>
                 <div className="inputWrap">
                     <input
@@ -202,7 +193,7 @@ function Register() {
                     />
                     <button className="pnButton" onClick={!verificationSent ? sendVerification : resendVerification}>{!verificationSent ? "인증" : "재전송"}</button>
                 </div>
-
+                {/* 전화번호 인증 부분 */}
                 {verificationSent && (
                     <div className="inputWrap">
                         <timer>{formatTime()}</timer>
@@ -234,6 +225,7 @@ function Register() {
                     )}
                 </div>
 
+                {/* 아이디 부분 */}
                 <div style={{ marginTop: "26px" }} className="inputTitle">아이디</div>
                 <div className="inputWrap">
                     <input
@@ -250,6 +242,7 @@ function Register() {
                     )}
                 </div>
 
+                {/* 비밀번호 부분 */}
                 <div style={{ marginTop: "26px" }} className="inputTitle">비밀번호</div>
                 <div className="inputWrap">
                     <input
@@ -266,12 +259,14 @@ function Register() {
                     )}
                 </div>
 
+                    {/* 가입 버튼 부분 */}
                 <div className='buttonWrap'>
                     <button onClick={onClickConfirmButton} disabled={notAllow} className="bottomButton">
                         가입
                     </button>
                 </div>
                 <hr />
+                {/* 로그인/아이디/비번찾기 부분 */}
                 <div className="registerWrap">
                     <div className="registerTitle">
                         계정이 있으신가요? <Link to="/">로그인하기</Link>
@@ -281,6 +276,7 @@ function Register() {
                     </div>
                 </div> <br /><br />
 
+                    {/* 간편가입 부분 */}
                 <h2>간편가입</h2>
                 <div className="login-container">
                     <button className="social-login-btn kakao">카카오로 시작하기</button>
