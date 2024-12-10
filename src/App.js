@@ -18,6 +18,8 @@ import Log from './login/Log';
 import Register from './login/Register';
 import FindId from './login/FindId';
 import FindPw from './login/FindPw';
+import CommInfo from './CommPages/CommInfo.js';
+
 
 function App() {
   return (
@@ -29,16 +31,15 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/new-products" element={<NewProducts />} />
           <Route path="/best-funding" element={<BestFunding />} />
-          <Route path="/funding" element={<Funding />} />
-          <Route path="/communication" element={<Communication />} />
+          <Route path="/communication" element={<CommHome/>} />
           <Route path="/best-funding/:id" element={<DetailedPage />} /> {/* 상세 페이지 경로 추가 */}
           <Route path='/findId' element={<FindId />} />
           <Route path='/findPw' element={<FindPw />} />
-          <Route path='/' element={<Log />} />
+          <Route path='/log' element={<Log />} />
           <Route path='/register' element={<Register />} />
           <Route path="/CartPage" element={<CartPage />} />
-          <Route path="/FundingList" element={<FundingList />} />
-          <Route path='/community' element={<CommHome/>} />
+          <Route path="/funding" element={<FundingList />} />
+          <Route path="/info/:id" element={<CommInfo  />} />
         </Routes>
         <Footer />
       </div>

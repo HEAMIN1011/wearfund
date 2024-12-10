@@ -12,6 +12,7 @@ const VERIFICATION_CODE_LENGTH = 6;
 
 
 function Register() {
+    
     const [email, setEmail] = useState('');
     const [pn, setPn] = useState('');
     const [id, setId] = useState('');
@@ -54,7 +55,7 @@ function Register() {
     };
 
     useEffect(() => {
-        let interval: numbers;
+        let interval;
         if (verificationSent) {
             interval = window.setInterval(() => {
                 setTimer((prevTimer) => {
@@ -269,7 +270,7 @@ function Register() {
                 {/* 로그인/아이디/비번찾기 부분 */}
                 <div className="registerWrap">
                     <div className="registerTitle">
-                        계정이 있으신가요? <Link to="/">로그인하기</Link>
+                        계정이 있으신가요? <Link to="/log">로그인하기</Link>
                     </div>
                     <div className="findTitle">
                         아이디 또는 비밀번호를 잊으셨나요? <Link to="/findId">아이디/비밀번호 찾기</Link>
