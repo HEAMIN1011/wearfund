@@ -30,7 +30,6 @@ function CommHome() {
 
         <div className='body'>
 
-            <img src={'../image/commimg2.jpg'} alt="commimg"></img>
             <h4 className='info-header'><span>공지사항</span></h4>
             <div className='information'>
 
