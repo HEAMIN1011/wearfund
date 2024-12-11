@@ -6,7 +6,7 @@ import Bestfunding from './MainBest/Bestfunding';
 
 function Mainbody() {
   return (
-    <main style={{ flex: 1, padding: '20px', textAlign: 'center' }}>
+    <main style={{ flex: 1 }}>
       <MainSlide />
       <Bestfunding />
 

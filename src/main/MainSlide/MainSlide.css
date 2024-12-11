@@ -1,6 +1,7 @@
 /* MainSlide.css */
 .slide-container {
     position: relative;
+
 }
 
 .slide-item {
@@ -20,7 +21,7 @@
     text-align: center;
     color: #5e5e5e;
 
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 5px;
 }
 
