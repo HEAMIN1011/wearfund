@@ -17,7 +17,7 @@ const MainSlide = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         pauseOnHover: true,
         cssEase: "linear"
     };
@@ -28,41 +28,25 @@ const MainSlide = () => {
                 <div className="slide-item">
                     <img src={image1} alt="Slide Image 1" />
                     <div className="slide-text">
-                        <span className="slide-textOne">편안함과 스타일을 한 번에!</span>
-                        <br/>
-                        <span className="slide-textTwo">당신의 스윙을 완성할 완벽한 골프웨어. 지금 펀딩에 동참하세요!</span>
+                        <div className="slide-textOne">ANEW GOLF</div>
+                        <div className="slide-textTwo">편안함과 스타일을 한 번에!</div>
+                        <div className="slide-textThree">당신의 스윙을 완성할 완벽한 골프웨어. 지금 펀딩에 동참하세요!</div>
                     </div>
                 </div>
                 <div className="slide-item">
                     <img src={image2} alt="Slide Image 2" />
                     <div className="slide-text">
-                        <span className="slide-textOne">편안함과 스타일을 한 번에!</span>
-                        <br/>
-                        <span className="slide-textTwo">당신의 스윙을 완성할 완벽한 골프웨어. 지금 펀딩에 동참하세요!</span>
+                        <div className="slide-textOne">WINTER SEASON</div>
+                        <div className="slide-textTwo">편안함과 스타일을 한 번에!</div>
+                        <div className="slide-textThree">당신의 스윙을 완성할 완벽한 골프웨어. 지금 펀딩에 동참하세요!</div>
                     </div>
                 </div>
                 <div className="slide-item">
                     <img src={image3} alt="Slide Image 3" />
                     <div className="slide-text">
-                        <span className="slide-textOne">편안함과 스타일을 한 번에!</span>
-                        <br/>
-                        <span className="slide-textTwo">당신의 스윙을 완성할 완벽한 골프웨어. 지금 펀딩에 동참하세요!</span>
-                    </div>
-                </div>
-                <div className="slide-item">
-                    <img src={image1} alt="Slide Image 4" />
-                    <div className="slide-text">
-                        <span className="slide-textOne">편안함과 스타일을 한 번에!</span>
-                        <br/>
-                        <span className="slide-textTwo">당신의 스윙을 완성할 완벽한 골프웨어. 지금 펀딩에 동참하세요!</span>
-                    </div>
-                </div>
-                <div className="slide-item">
-                    <img src={image2} alt="Slide Image 5" />
-                    <div className="slide-text">
-                        <span className="slide-textOne">편안함과 스타일을 한 번에!</span>
-                        <br/>
-                        <span className="slide-textTwo">당신의 스윙을 완성할 완벽한 골프웨어. 지금 펀딩에 동참하세요!</span>
+                        <div className="slide-textOne">SHESSMISS X LIST</div>
+                        <div className="slide-textTwo">편안함과 스타일을 한 번에!</div>
+                        <div className="slide-textThree">당신의 스윙을 완성할 완벽한 골프웨어. 지금 펀딩에 동참하세요!</div>
                     </div>
                 </div>
             </Slider>
