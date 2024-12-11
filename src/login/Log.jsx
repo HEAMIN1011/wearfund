@@ -74,92 +74,94 @@ function Log() {
 
 
     return (
-        <div className="page">
-            <div className='titleWrap'>
-                <br />
-                로그인
-            </div>
-            <div className="contentWrap">
-                {/* <div className="inputTitle">이메일 주소</div>
-                <div className="inputWrap">
-                    <input
-                        type="text"
-                        className="input"
-                        placeholder="purple@naver.com"
-                        value={email}
-                        onChange={handleEmail}>
-                    </input>
+        <div className="Container">
+                <div className="page">
+                <div className='titleWrap'>
+                    <br />
+                    로그인
                 </div>
+                <div className="contentWrap">
+                    {/* <div className="inputTitle">이메일 주소</div>
+                    <div className="inputWrap">
+                        <input
+                            type="text"
+                            className="input"
+                            placeholder="purple@naver.com"
+                            value={email}
+                            onChange={handleEmail}>
+                        </input>
+                    </div>
 
-                <div className="errorMessageWrap">
-                    {
-                        !emailValid && email.length > 0 && (
-                            <div>올바른 이메일을 입력해주세요.</div>
-                        )
-                    }
-                </div> */}
+                    <div className="errorMessageWrap">
+                        {
+                            !emailValid && email.length > 0 && (
+                                <div>올바른 이메일을 입력해주세요.</div>
+                            )
+                        }
+                    </div> */}
 
-                <div style={{ marginTop: "26px" }} className="inputTitle">아이디</div>
-                <div className="inputWrap">
-                    <input
-                        type="text"
-                        className="input"
-                        placeholder="ex)purple3"
-                        value={id}
-                        onChange={handleId}></input>
-                </div>
+                    <div style={{ marginTop: "26px" }} className="inputTitle">아이디</div>
+                    <div className="inputWrap">
+                        <input
+                            type="text"
+                            className="input"
+                            placeholder="ex)purple3"
+                            value={id}
+                            onChange={handleId}></input>
+                    </div>
 
-                <div className="errorMessageWrap">
-                    {
-                        !idValid && id.length > 0 && (
-                            <div>올바른 아이디를 입력해주세요.</div>
-                        )
-                    }
-                </div>
+                    <div className="errorMessageWrap">
+                        {
+                            !idValid && id.length > 0 && (
+                                <div>올바른 아이디를 입력해주세요.</div>
+                            )
+                        }
+                    </div>
 
-                <div style={{ marginTop: "26px" }} className="inputTitle">비밀번호</div>
-                <div className="inputWrap">
-                    <input
-                        type="password"
-                        className="input"
-                        placeholder="영문, 숫자, 특수문자 포함 8자 이상"
-                        value={pw}
-                        onChange={handlePw}></input>
-                </div>
+                    <div style={{ marginTop: "26px" }} className="inputTitle">비밀번호</div>
+                    <div className="inputWrap">
+                        <input
+                            type="password"
+                            className="input"
+                            placeholder="영문, 숫자, 특수문자 포함 8자 이상"
+                            value={pw}
+                            onChange={handlePw}></input>
+                    </div>
 
-                <div className="errorMessageWrap">
-                    {
-                        !pwValid && pw.length > 0 && (
-                            <div>영문, 숫자, 특수문자 포함 8자 이상 입력해주세요.</div>
-                        )
-                    }
-                </div>
+                    <div className="errorMessageWrap">
+                        {
+                            !pwValid && pw.length > 0 && (
+                                <div>영문, 숫자, 특수문자 포함 8자 이상 입력해주세요.</div>
+                            )
+                        }
+                    </div>
 
-                <div className='buttonWrap'>
-                    <button onClick={onClickConfirmButton} disabled={notAllow} className="bottomButton">로그인</button>
-                </div>
-                <hr nonshade />
-                <div className="registerWrap">
-                    <div className="registerTitle">
-                        계정이 없으신가요? <Link to="/register">가입하기</Link>
+                    <div className='buttonWrap'>
+                        <button onClick={onClickConfirmButton} disabled={notAllow} className="bottomButton">로그인</button>
+                    </div>
+                    <hr nonshade />
+                    <div className="registerWrap">
+                        <div className="registerTitle">
+                            계정이 없으신가요? <Link to="/register">가입하기</Link>
+                        </div>
+                    </div>
+                    <br /><br /><br />
+
+                    <div className="login-container">
+                        <button className="email-login-btn">이메일로 로그인하기</button>
+                        <button className="social-login-btn kakao">카카오로 시작하기</button>
+                        <button className="social-login-btn naver">네이버로 시작하기</button>
+                        <div className="social-icons">
+                            <button className="icon-btn google"><i class="fa-brands fa-google"></i></button>
+                            <button className="icon-btn facebook" ><i class="fa-brands fa-facebook"></i></button>
+                            <button className="icon-btn apple"><i class="fa-brands fa-apple"></i></button>
+                        </div>
                     </div>
                 </div>
-                <br/><br/><br/>
-
-                <div className="login-container">
-                    <button className="email-login-btn">이메일로 로그인하기</button>
-                    <button className="social-login-btn kakao">카카오로 시작하기</button>
-                    <button className="social-login-btn naver">네이버로 시작하기</button>
-                    <div className="social-icons">
-                        <button className="icon-btn google"><i class="fa-brands fa-google"></i></button>
-                        <button className="icon-btn facebook" ><i class="fa-brands fa-facebook"></i></button>
-                        <button className="icon-btn apple"><i class="fa-brands fa-apple"></i></button>
-                    </div>
-                </div>
             </div>
-            </div>
+        </div>
 
-            );
+    );
 }
 
-            export default Log;
+export default Log;
