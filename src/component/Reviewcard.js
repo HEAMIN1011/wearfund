@@ -9,19 +9,14 @@ function Reviewcard({ review, index, modalflag, setModalFlag, clickindex, setCli
 
     return (
         <div className="hover"> 
-            <div style={{ width: '13rem', height: '22rem', margin: '30px' }} onClick={() => {
+            <div  style={{width: '16rem', height: '22rem', margin: '15px', marginBottom:'50px' }} onClick={() => {
                 setModalFlag(!modalflag)
                 setClickIndex(index)
             }} >
-                <img variant="top" src={review[index].imgpath} style={{ width: '13rem', height: '11rem', objectFit: 'cover' }}></img>
-                <div style={{ width: '13rem', padding: '15px' }}>
+                <img className="rvimg" variant="top" src={review[index].imgpath} ></img>
+                <div>
                     <div className="rvtitle">{review[index].title}</div>
-
-                    <hr style={{ width: '50%', margin: 'auto', marginTop: '10px', marginBottom: '10px' }}></hr>
-
-                    <div className='rvcontent ellipsis'>
-                        {review[index].content}
-                    </div>
+                    <div className='rvcontent ellipsis'>{review[index].content}</div>
                 </div>
             </div>
 

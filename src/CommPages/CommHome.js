@@ -41,10 +41,9 @@ function CommHome() {
                                 navigate('/info/' + item.id);
                             }} >
                                 <div className='title'> {info[index].title}</div>
-                                <div className='date' style={{ width: '10%' }}><span>{info[index].date}</span></div>
-                                <div className='writer' style={{ width: '10%' }}><span>퍼플펀딩</span></div>
+                                <div className='date' ><span>{info[index].date}</span></div>
+                                <div className='writer'><span>퍼플펀딩</span></div>
                             </div>
-                            <hr style={{ width: '50%', margin: 'auto', marginTop: '10px', marginBottom: '10px' }}></hr>
                         </div>
 
                     )
@@ -66,13 +65,13 @@ function CommHome() {
                 </div>
             </div>
             <div className='btnwrap'><button className='btncss'><FontAwesomeIcon icon={faPlus} /></button></div>
-            <div>
+            <div className='searchwrap'>
                 <select className='searchsel'>
                     <option>제목+내용</option>
                     <option>제목</option>
                     <option>내용</option>
                 </select>
-                <input type="text" placeholder=' ' className='searchcss'></input>
+                <input type="text" placeholder=' ' className='searchtext'></input>
                 <button className='btncss'><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
             </div>
 
@@ -91,29 +90,22 @@ function CommHome() {
                 </div>
             </div>
             <div className='btnwrap'><button className='btncss'><FontAwesomeIcon icon={faPlus} /></button></div>
-            <div>
+            <div className='searchwrap'>
                 <select className='searchsel'>
                     <option>제목+내용</option>
                     <option>제목</option>
                     <option>내용</option>
                 </select>
-                <input type="text" placeholder=' ' className='searchcss'>
-                </input><button className='btncss'><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+                <input type="text" placeholder=' ' className='searchtext'></input>
+                <div className='btnwrap'><button className='btncss'><FontAwesomeIcon icon={faMagnifyingGlass} /></button></div>
             </div>
 
+            <br /><br /><br /><br />
 
             {
                 modalflag == true ? <Modal review={review} modalflag={modalflag} setModalFlag={setModalFlag} clickindex={clickindex} setClickIndex={setClickIndex} /> : null
-
             }
-
-
-
-
-
         </div>
-
-
     )
 }
 

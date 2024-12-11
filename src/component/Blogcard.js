@@ -9,20 +9,13 @@ function Blogcard({ blog, index }) {
 
     return (
 
-        <div className="hover"style={{ width: '13rem', height: '22rem', margin: '30px' }} onClick={() => {
+        <div className="hover" onClick={() => {
             window.open(blog[index].link)
         }}>
-            <img variant="top" src={blog[index].imgpath} style={{ width: '13rem', height: '11rem', objectFit: 'cover' }}></img>
+            <img variant="top" className="blimg" src={blog[index].imgpath}></img>
             <div>
-
-                <div className="bltitle"style={{width: '13rem', marginTop :'15px'}}>
-                    {blog[index].title}</div>
-
-                <hr style={{ width: '50%', margin: 'auto', marginTop: '10px', marginBottom: '10px' }}></hr>
-
-                <p className='blcontent'>
-                    {blog[index].content}
-                </p>
+                <div className="bltitle">{blog[index].title}</div>
+                <p className='blcontent'>{blog[index].content}</p>
             </div>
         </div>
 
