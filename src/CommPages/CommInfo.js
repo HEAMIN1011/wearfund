@@ -1,10 +1,13 @@
 import './CommInfo.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX, faPen } from "@fortawesome/free-solid-svg-icons";
-
+import infodata from '../CommData/infodata';
 import { useParams } from "react-router-dom";
-function CommInfo({info}) {
-    
+import { useState } from 'react';
+function CommInfo() {
+
+    let [info, setInfo] = useState(infodata);
+
     let {id} = useParams();
 
     let infopara = info.find((item) => {

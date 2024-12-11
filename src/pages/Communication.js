@@ -1,7 +1,8 @@
 import React from "react";
+import CommHome from "../CommPages/CommHome";
 
 function Communication() {
-  return <div>소통 페이지</div>;
+  return <CommHome/>;
 }
 
 export default Communication;

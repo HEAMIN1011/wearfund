@@ -110,10 +110,7 @@ function CommHome() {
 
 
 
-            {/* <Routes>
-                <Route path="/info/:id" element={<CommInfo info={info}/>} />
-                <Route path="*" element={<div>찾을 수 없습니다. 주소 확인하세요.</div>}/>
-            </Routes> */}
+
         </div>
 
 

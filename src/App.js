@@ -39,7 +39,7 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path="/CartPage" element={<CartPage />} />
           <Route path="/funding" element={<FundingList />} />
-          <Route path="/info/:id" element={<CommInfo  />} />
+          <Route path="/info/:id" element={<CommInfo />} />
         </Routes>
         <Footer />
       </div>

@@ -1,7 +1,8 @@
 import React from "react";
+import FundingList from "../components/FundingList";
 
 function Funding() {
-  return <div>펀딩 페이지</div>;
+  return <FundingList />;
 }
 
 export default Funding;
