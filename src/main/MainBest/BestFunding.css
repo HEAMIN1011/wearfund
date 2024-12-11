@@ -25,13 +25,18 @@
   padding: 15px;
 }
 
+.best-funding h2 {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
 .funding-info h3 {
-  font-size: 16px;
-  margin-bottom: 8px;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .funding-info p {
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
   margin-bottom: 10px;
 }
@@ -39,11 +44,12 @@
 .funding-stats {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .percentage {
-  color: #2b8a3e;
+  color: #706297;
   font-weight: bold;
 }
 
@@ -51,6 +57,7 @@
   color: #999;
 }
 
-.funding-card a {
+
+a {
   text-decoration: none;
 }
