@@ -17,7 +17,7 @@
 
 .boxBack {
     margin: 15px;
-    width: 26%;
+    width: 27%;
     height: 100%;
     padding: 25px;
     background-color: rgba(255, 255, 255, 0.342);
@@ -25,10 +25,9 @@
 
 .boxNav {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     height: 100%;
-    
 
 }
 .white1 {
