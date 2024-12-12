@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import './Log.css';
 import './FindId.jsx';
 import './FindPw.jsx';
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebook } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
 
 const User = {
     email: 'purple3@naver.com',
@@ -145,16 +148,16 @@ function Log() {
                             계정이 없으신가요? <Link to="/register">가입하기</Link>
                         </div>
                     </div>
-                    <br /><br /><br />
+                    <br /><br />
 
                     <div className="login-container">
                         <button className="email-login-btn">이메일로 로그인하기</button>
                         <button className="social-login-btn kakao">카카오로 시작하기</button>
                         <button className="social-login-btn naver">네이버로 시작하기</button>
                         <div className="social-icons">
-                            <button className="icon-btn google"><i class="fa-brands fa-google"></i></button>
-                            <button className="icon-btn facebook" ><i class="fa-brands fa-facebook"></i></button>
-                            <button className="icon-btn apple"><i class="fa-brands fa-apple"></i></button>
+                            <button className="icon-btn google"><FcGoogle /></button>
+                            <button className="icon-btn facebook" ><FaFacebook /></button>
+                            <button className="icon-btn apple"><FaApple /></button>
                         </div>
                     </div>
                 </div>

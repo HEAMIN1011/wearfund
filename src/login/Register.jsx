@@ -5,6 +5,9 @@ import Api from './Api';
 import Timer from './Timer';
 import "./FindId.jsx";
 import "./FindPw.jsx";
+import { FcGoogle } from "react-icons/fc";
+import { FaFacebook } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
 
 const INITIAL_TIMER_SECONDS = 180;
 const PHONE_NUMBER_LENGTH = 11;
@@ -161,7 +164,7 @@ function Register() {
     return (
         <div className="page">
             <div className='titleWrap'>
-                이메일, 전화번호, 아이디, 비밀번호를 <br /> 입력해주세요
+                회원가입
             </div>
             {/* 이메일 부분 */}
             <div className="contentWrap">
@@ -197,10 +200,10 @@ function Register() {
                 {/* 전화번호 인증 부분 */}
                 {verificationSent && (
                     <div className="inputWrap">
-                        <timer>{formatTime()}</timer>
-                        <input
+                        <timer className="timerNb">{formatTime()}</timer>
+                        <input 
                             placeholder="인증번호 입력"
-                            className="input"
+                            className="checkNb"
                             type="text"
                             value={verificationCode}
                             onChange={(e) => setVerificationCode(e.target.value)}
@@ -275,17 +278,17 @@ function Register() {
                     <div className="findTitle">
                         아이디 또는 비밀번호를 잊으셨나요? <Link to="/findId">아이디/비밀번호 찾기</Link>
                     </div>
-                </div> <br /><br />
+                </div> <br />
 
                     {/* 간편가입 부분 */}
-                <h2>간편가입</h2>
+                <div className="fastRg">간편가입</div>
                 <div className="login-container">
                     <button className="social-login-btn kakao">카카오로 시작하기</button>
                     <button className="social-login-btn naver">네이버로 시작하기</button>
                     <div className="social-icons">
-                        <button className="icon-btn google"><i class="fa-brands fa-google"></i></button>
-                        <button className="icon-btn facebook" ><i class="fa-brands fa-facebook"></i></button>
-                        <button className="icon-btn apple"><i class="fa-brands fa-apple"></i></button>
+                        <button className="icon-btn google"><FcGoogle /></button>
+                        <button className="icon-btn facebook"><FaFacebook /></button>
+                        <button className="icon-btn apple"><FaApple /></button>
                     </div>
                 </div>
             </div>
