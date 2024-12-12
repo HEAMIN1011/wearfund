@@ -1,40 +1,53 @@
 * {
-    margin: 0;
+    margin: 20px;
     padding: 5px;
     box-sizing: border-box;
 }
-.nav{
+
+.nav {
     display: flex;
     border-top: 1px solid #c7c7c7;
 }
 
-.navbar{
+.navbar {
     display: flex;
     width: 10%;
     cursor: pointer;
-    padding-left: 5px;
+    padding: 10px;
 }
 
-.navbar2{
+.navbar2 {
     width: 70%;
+    padding: 10px;
 }
 
-.navbar2_1{
+.navbar2_1 {
     width: 10%;
+    padding: 10px;
 }
 
-.fontgray{
+.fontgray {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     color: gray;
     padding-bottom: 30px;
+    border-bottom: 1px solid #c7c7c7;
 }
 
-.shoppack{
+.center {
     display: flex;
-    justify-content:center;
-    color: slateblue;
-    border-top: 1px solid #c7c7c7;
-    padding-top: 50px;
+    justify-content: center;
+    padding: 40px;
+}
 
+.shoppack {
+    display: flex;
+    justify-content: center;
+    color: slateblue;
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 40px;
+    margin-left: 20px;
 }
