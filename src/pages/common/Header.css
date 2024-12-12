@@ -5,8 +5,8 @@
   align-items: center;
   margin: 0;
   position: relative;
-  background-color: #2F2D2C;
   height: 100px;
+  border-bottom: 1px solid #ececec;
 }
 
 header a {
@@ -15,7 +15,7 @@ header a {
 }
 
 header a:hover {
-  color: #007bff; /* 선택 사항: 호버 시 색상 */
+  color: #a79eb1; /* 선택 사항: 호버 시 색상 */
 }
 
 .logo {
@@ -40,19 +40,16 @@ header a:hover {
 .menu {
   display: flex;
   gap: 15px;
-  color: white;
 }
 
 .menu-left {
   justify-content: flex-start;
   margin-left: 30px;
-  background-color: #2F2D2C;
 }
 
 .menu-right {
   justify-content: flex-end;
   margin-right: 20px;
-  background-color: #2F2D2C;
 }
 
 .hamburger-menu {
@@ -74,7 +71,7 @@ header a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00000080;
+  background-color: #000000a1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,10 +79,10 @@ header a:hover {
 }
 
 .search-content {
-  background-color: white;
+  /* background-color: white; */
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 5px #ffffff; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,63 +141,3 @@ header a:hover {
   }
 
 }
-
-
-
-/* @media (max-width: 768px) {
-  .header {
-    flex-wrap: wrap;
-    position: relative;
-    margin: 0;
-  }
-
-  .hamburger-menu {
-    display: block;
-  }
-
-  .logo {
-    position: static;
-    margin: 0 auto;
-    transform: none;
-  }
-
-  .menu-left {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 90px;
-    background-color: #ebebeb;
-    z-index: 1;
-  }
-  .menu-left.span {
-    background-color: #555555;
-    padding: 20px;
-  }
-  .menu-left.mobile-open {
-    display: flex;
-    z-index: 2;
-  }
-
-  .menu-right {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 190px;
-    background-color: #ebebeb;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  .menu-right.mobile-open {
-    display: flex;
-    z-index: 2;
-  }
-
-
-
-
-} */
