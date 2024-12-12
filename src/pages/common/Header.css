@@ -79,7 +79,7 @@ header a:hover {
 }
 
 .search-content {
-  /* background-color: white; */
+  background-color: #ffffff9c;
   padding: 20px;
   border-radius: 5px;
   /* box-shadow: 0 2px 5px #ffffff; */
@@ -98,7 +98,7 @@ header a:hover {
 
 .search-content .close-btn {
   background-color: #ccc;
-  color: white;
+  /* color: white; */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
