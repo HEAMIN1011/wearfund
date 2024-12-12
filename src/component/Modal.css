@@ -2,6 +2,14 @@
     text-overflow: ellipsis;
 }
 
+.hrline{
+    background-color: gray;
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .modalpage {
     display: block;
     position: fixed;
@@ -27,10 +35,10 @@
     width: 70%;
     height: auto;
     background-color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     max-height: 60vh;
     padding: 20px;
     height: 60vh;
@@ -56,11 +64,15 @@
 .modalwrap {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray; */
+
 }
 
 .modalheader {
-    padding-left: 30px;
+    padding-left: 43px;
     width: 100%;
     display: flex;
     justify-content: left;
@@ -71,8 +83,9 @@
 .reviewinfo {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+
 }
+
 
 .reviewer {
     margin: 10px;
@@ -89,10 +102,12 @@
 }
 
 .itemoption {
-    padding-left: 40px;
-    font-size: 14px;
+    padding-left: 43px;
+    font-size: 12px;
     color: gray;
     text-align: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
 
 }
 
@@ -102,6 +117,9 @@
     padding-right: 30px;
     display: flex;
     justify-content: left;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid lightgray; */
 
 }
 
@@ -110,15 +128,20 @@
     height: 49px;
     display: flex;
     align-items: center;
+    
     font-size: smaller;
-    padding-left: 40px;
-
-
+    padding-left: 43px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    
 }
 
 .secondtitle {
     margin-left: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -144,7 +167,6 @@
     height: 100%;
     object-fit: contain;
     margin-right: 20px;
-
 }
 
 .modalfooter {
@@ -153,6 +175,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border-top: 1px solid lightgray; */
+    padding-top: 30px;
+    
 }
 
 .commentcount {
@@ -184,7 +209,7 @@
 }
 
 .commentwritewrap {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: right;
     font-size: small;
@@ -196,13 +221,19 @@
 .commentwrite {
 
     padding-left: 5px;
-    padding-right: 5px;
+
     border: 0px;
     font-size: 12px;
 }
 
 .login {
-
+background-color: white;
     border: 0px;
     font-size: 12px;
+}
+
+.logwrap {
+    width: 80%;
+    display: flex;
+    justify-content: right;
 }

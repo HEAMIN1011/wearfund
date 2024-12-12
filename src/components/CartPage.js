@@ -2,7 +2,7 @@ import './CartPage.css';
 import ListCard from "./ListCard";
 import { TbShoppingBagHeart } from "react-icons/tb";
 import { IoTrendingUp } from "react-icons/io5";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -10,7 +10,7 @@ function CartPage() {
 
     return (
         <div>
-            <div><h4>장바구니</h4></div>
+            <div className='title2'>장바구니</div>
             <div className='nav'>
                 <span className='navbar'>일반구매</span>
                 <span className='navbar'>정기구독</span>
@@ -21,16 +21,13 @@ function CartPage() {
                 <span className='navbar2_1'>주문금액</span>
                 <span className='navbar2_1'>배송 정보</span>
             </div>
-            <div className='fontgray'>
-                <TbShoppingBagHeart size={75} color='slateblue'/>
+            <div className='center'>
+                <TbShoppingBagHeart size={75} color='slateblue' />
             </div>
             <span className='fontgray'>장바구니가 비어있습니다.</span>
             <Link to='/best-funding' className='shoppack'>계속 쇼핑하기</Link>
-
-            <div className='navbar3'>
-                <h4>순위 급상승<IoTrendingUp size={40} color='slateblue'/></h4>
-                <span>퍼플펀딩의 인기상품</span>
-            </div>
+            <div className='title2'>순위 급상승<IoTrendingUp size={30} color='slateblue' /></div>
+            <span className='center'>웨어펀딩의 인기상품</span>
             <div className="box"><ListCard /></div>
         </div>
     );
