@@ -10,7 +10,7 @@ function CartPage() {
 
     return (
         <div>
-            <div className='title'>장바구니</div>
+            <h4 className='title2'>장바구니</h4>
             <div className='nav'>
                 <span className='navbar'>일반구매</span>
                 <span className='navbar'>정기구독</span>
@@ -26,7 +26,7 @@ function CartPage() {
             </div>
             <span className='fontgray'>장바구니가 비어있습니다.</span>
             <Link to='/best-funding' className='shoppack'>계속 쇼핑하기</Link>
-            <span className='title'>순위 급상승<IoTrendingUp size={30} color='slateblue' /></span>
+            <h4 className='title2'>순위 급상승<IoTrendingUp size={30} color='slateblue' /></h4>
             <span className='center'>웨어펀딩의 인기상품</span>
             <div className="box"><ListCard /></div>
         </div>
