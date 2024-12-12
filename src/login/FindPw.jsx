@@ -21,15 +21,15 @@ const Find = () => {
         try {
             // 실제 서버 대신 목 데이터를 활용한 응답 처리
             const mockUsers = [
-                { email: "purple3@naver.com", username: "wearfund3@@" },
-                { email: "user2@example.com", username: "user2" },
+                { email: "purple3@naver.com", username: "hello3@@" }
             ];
     
             const user = mockUsers.find((user) => user.email === email);
     
             if (user) {
                 // 목 데이터를 사용한 성공 메시지
-                setMessage(`비밀번호는 ${user.username} 입니다.`);
+                // setMessage(`임시 비밀번호는 ${user.username} 입니다.`);
+                setMessage('임시 비밀번호를 이메일로 전송했습니다. 이후 비밀번호를 꼭 변경해주세요.')
             } else {
                 // 목 데이터를 사용한 실패 메시지
                 setMessage("존재하지 않는 계정입니다.");
