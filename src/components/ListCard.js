@@ -17,7 +17,8 @@ function ListCard() {
                     <div className='titleFont'>{fashion[index].title}<TbShoppingBagPlus size={30} color='gray' 
                     cursor='pointer'/></div>
                     <div className='contentSize'>{fashion[index].content}</div>
-                    <div className='priceFont'>{fashion[index].price}</div>
+                    <span className='priceFont'>{fashion[index].price}</span>
+                    <span className='titleFont'>{fashion[index].percent}</span>
                 </div>
             )
             
