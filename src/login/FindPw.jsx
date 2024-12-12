@@ -44,7 +44,7 @@ const Find = () => {
     };
 
     return (
-        <div style={{ padding: "20px", maxWidth: "400px", margin: "0 auto" }}>
+        <div style={{ padding: "100px", maxWidth: "600px", margin: "0 auto" }}>
         <div className="find-list">
             <ul>
                 <li class="id-active" style={{color: "#90949c"}}><Link to="/findId">아이디 찾기</Link></li>

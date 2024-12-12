@@ -14,8 +14,7 @@ const Find = () => {
     };
 
     const users = [
-        { email: "purple3@naver.com", username: "purple3" },
-        { email: "user2@example.com", username: "user2" },
+        { email: "purple3@naver.com", username: "purple3" }
     ];
 
 
@@ -28,8 +27,7 @@ const Find = () => {
         try {
             // 실제 서버 대신 목 데이터를 활용한 응답 처리
             const mockUsers = [
-                { email: "purple3@naver.com", username: "purple3" },
-                { email: "user2@example.com", username: "user2" },
+                { email: "purple3@naver.com", username: "purple3" }
             ];
 
             const user = mockUsers.find((user) => user.email === email);
@@ -51,11 +49,11 @@ const Find = () => {
     };
 
     return (
-        <div style={{ padding: "20px", maxWidth: "400px", margin: "0 auto" }}>
+        <div style={{ padding: "100px", maxWidth: "600px", margin: "0 auto"}}>
             <div className="find-list">
                 <ul>
-                    <li class="id-active" style={{color:"red"}} ><Link to="/findid">아이디 찾기</Link></li>
-                    <li class="pw-active" style={{color: "#90949c"}} ><Link to="/findPw">비밀번호 찾기</Link></li>
+                    <li class="id-active" ><Link to="/findid">아이디 찾기</Link></li>
+                    <li class="pw-active" ><Link to="/findPw">비밀번호 찾기</Link></li>
                 </ul>
             </div>
 
@@ -104,17 +102,17 @@ const Find = () => {
                 </button>
             </form>
             {
-        message && (
-            <p
-                style={{
-                    marginTop: "20px",
-                    color: message.startsWith("아이디는") ? "green" : "red",
-                }}
-            >
-                {message}
-            </p>
-        )
-    }
+                message && (
+                    <p
+                        style={{
+                            marginTop: "20px",
+                            color: message.startsWith("아이디는") ? "green" : "red",
+                        }}
+                    >
+                        {message}
+                    </p>
+                )
+            }
         </div >
     );
 };
