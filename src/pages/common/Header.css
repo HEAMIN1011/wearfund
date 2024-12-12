@@ -110,6 +110,16 @@ header a:hover {
   height: auto;
 }
 
+.cartIcon .search-btn {
+  font-size: 24px; /* 아이콘 크기를 24px로 설정 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; /* 아이콘을 감싸는 영역의 너비 */
+  height: 32px; /* 아이콘을 감싸는 영역의 높이 */
+}
+
+
 /* 반응형 스타일 */
 @media screen and (max-width: 768px) {
   .header {

@@ -37,9 +37,8 @@ function Header() {
         <Link to="/log"><span>로그인</span></Link>
         <Link to="/register"><span>회원가입</span></Link>
         <Link to="/Cartpage">
-          <span><LuShoppingCart /></span>
-        </Link>
-          <span className="search-btn" onClick={toggleSearch}><LuSearch /></span>
+          <span className='cartIcon'><LuShoppingCart size={25} /></span></Link>
+          <span className="search-btn" onClick={toggleSearch}><LuSearch size={25} /></span>
         </div>
       </div>
 
