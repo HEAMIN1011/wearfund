@@ -12,7 +12,7 @@ let blogdata = [
     {
         id : "bd000",
         title : "HYO도 패션블로그",
-        content : "20~30대 남성 겨울 패션 주목 !",
+        content : "20~30대 남성 인기 브랜드 및 조합 설명 !",
         link: "https://blog.naver.com/monn19",
         imgpath : bd000
     } 

@@ -1,12 +1,7 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-
-h5 {
-    font-weight: bolder;
 
 }
 
@@ -17,7 +12,7 @@ h6 {
 .infotop {
     margin-bottom: 125px;
     display: flex;
-    justify-content:space-evenly
+    justify-content: space-evenly
 }
 
 .infotoptext {
@@ -28,33 +23,42 @@ h6 {
     text-align: left;
 }
 
-.infotopimg{
+.infotopimg {
     width: 80%;
     display: flex;
     justify-content: right;
 }
 
 .infobody {
-    width: 55% ;
+    width: 60%;
     text-align: left;
     margin-left: 100px;
 
+}
+.infobody>.title {
+    font-weight: bolder;
+    font-size: 22px;
+}
+.infobody>.date {
+    font-size: 14px;
 }
 
 .bodywrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
-.modalfooter{
+.modalfooter {
     height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: left;
+    
 }
+
 .commentcount {
     width: 80%;
     display: flex;
@@ -62,35 +66,42 @@ h6 {
     font-size: small;
     margin-bottom: 5px;
 }
+
 .commentwrap {
-    width: 80%;
+    width: 40%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border : 1px, solid, lightgray;
+    border: 1px, solid, lightgray;
 }
 
-.commentbox{
-    width: 100%;
+.commentbox {
+    width: 50%;
     height: 100%;
     padding: 10px;
     border: 0px;
-    
+
 }
 
-.commentwritewrap{
+.commentwritewrap {
     width: 100%;
     display: flex;
     justify-content: right;
     font-size: small;
     margin-top: 10px;
-    padding-right: 25px ;
+    padding-right: 45px;
 }
 
-.commentwrite{
-    padding-left:5px;
-    padding-right:5px;
+.commentwrite {
+    padding-left: 5px;
+    padding-right: 5px;
     border: 1px solid gray;
     border-radius: 25px;
+}
+
+.searchwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

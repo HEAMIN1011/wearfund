@@ -17,12 +17,13 @@ const BestFunding = () => {
                 className="funding-image" 
               />
               <div className="funding-info">
-                <h3>{item.title}</h3>
-                {item.price && <p>{item.price}</p>}
                 <div className="funding-stats">
                   <span className="percentage">{item.percentage} 달성</span>
                   <span className="days-left">{item.daysLeft}</span>
                 </div>
+                <h3>{item.title}</h3>
+                {item.price && <p>{item.price}</p>}
+                
               </div>
             </Link>
           </div>

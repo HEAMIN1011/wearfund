@@ -1,6 +1,7 @@
 /* MainSlide.css */
 .slide-container {
     position: relative;
+
 }
 
 .slide-item {
@@ -14,26 +15,29 @@
 
 .slide-text {
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #5e5e5e;
-
-    padding: 10px;
-    border-radius: 5px;
+    /* padding: 10px; */
+    /* border-radius: 5px; */
 }
 
-.slide-text p {
+/* .slide-text p {
     margin: 0;
     font-size: 30px;
     color: #868686;
     line-height: 1.5;
-}
+} */
 .slide-textOne {
     color: white;
-    font-size: 40px;
+    font-size: 70px;
+    font-weight: bold;
 }
 .slide-textTwo {
+    color: white;
+}
+.slide-textThree {
     color: white;
 }

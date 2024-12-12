@@ -8,5 +8,31 @@
 
 .rvtitle {
     font-weight: bolder;
-    font-size: large;
+    font-size: 18px;
+    width: 16rem;
+    margin-top: 15px;
+}
+
+.hover {
+    width: 16rem;
+    height: 22rem;
+    margin: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rvimg {
+    width: 16rem;
+    height: 16rem;
+    object-fit: fill;
+    overflow:hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rvcontent{
+    font-size: 14px;
 }
