@@ -31,11 +31,11 @@ function Header() {
           <Link to="/communication"><span>소통</span></Link>
         </div>
         <div className="menu menu-right">
-          <span>로그인</span>
-          <span>회원가입</span>
-          <span><i className="fa-solid fa-cart-shopping"></i></span>
+        <Link to="/log"><span>로그인</span></Link>
+        <Link to="/register"><span>회원가입</span></Link>
+        <Link to="/Cartpage"><span style={{color: 'white'}}>장바구니<i className="fa-solid fa-cart-shopping"></i></span></Link>
           <span className="search-btn" onClick={toggleSearch}>
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass" >검색</i>
           </span>
         </div>
       </div>
