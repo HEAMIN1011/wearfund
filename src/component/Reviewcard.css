@@ -11,6 +11,8 @@
     font-size: 18px;
     width: 16rem;
     margin-top: 15px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .hover {
@@ -35,4 +37,6 @@
 
 .rvcontent{
     font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
 }

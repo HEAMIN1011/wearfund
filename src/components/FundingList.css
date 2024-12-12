@@ -27,6 +27,8 @@
     font-size: 16px;
     font-weight: bold;
     height: 100%;
+    font-family: "Gowun Dodum", sans-serif;
+    font-style: normal;
 
 }
 
@@ -36,12 +38,16 @@
     font-weight: normal;
     margin-top: 5px;
     margin-bottom: 17px;
+    font-family: "Gowun Dodum", sans-serif;
+    font-style: normal;
 }
 
 .white2 {
     color: white;
     font-size: 12px;
     font-weight: normal;
+    font-family: "Gowun Dodum", sans-serif;
+    font-style: normal;
 }
 
 .center {

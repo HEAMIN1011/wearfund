@@ -5,7 +5,6 @@ import fundingData from "../Data/FundingData";
 import { useState } from 'react';
 
 
-
 function FundingList() {
 
     return (
