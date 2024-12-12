@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../common/Header.css';
+import { LuShoppingCart } from "react-icons/lu";
+import { LuSearch } from "react-icons/lu";
+
 
 function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -33,10 +36,9 @@ function Header() {
         <div className="menu menu-right">
         <Link to="/log"><span>로그인</span></Link>
         <Link to="/register"><span>회원가입</span></Link>
-        <Link to="/Cartpage"><span style={{color: 'white'}}>장바구니<i className="fa-solid fa-cart-shopping"></i></span></Link>
-          <span className="search-btn" onClick={toggleSearch}>
-            <i className="fa-solid fa-magnifying-glass" >검색</i>
-          </span>
+        <Link to="/Cartpage">
+          <span className='cartIcon'><LuShoppingCart size={25} /></span></Link>
+          <span className="search-btn" onClick={toggleSearch}><LuSearch size={25} /></span>
         </div>
       </div>
 

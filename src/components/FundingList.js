@@ -26,7 +26,7 @@ function FundingList() {
                 </div>
             </div>
             <div>
-                <div>
+                <div><h2 className="center">Funding List</h2>
                     <div className="box"><ListCard /></div>
                     <div className="box"><ListCard /></div>
                     <div className="box"><ListCard /></div>

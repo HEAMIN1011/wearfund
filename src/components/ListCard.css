@@ -1,36 +1,43 @@
-*{
+* {
     margin: 0;
-    /* padding: 5px; */
+    padding: 5px;
     box-sizing: border-box;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.cardbox{
+
+.cardbox {
     width: 200%;
     height: 100%;
     position: relative;
 }
 
-.imageSize{
+.imageSize {
     width: 100%;
     height: 320px;
     object-fit: cover; /*사진 비율맞춰주는 함수*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
 }
 
-.titleFont{
+.titleFont {
     font-size: 17px;
     font-weight: bold;
     height: 25px;
 }
 
-.contentSize{
+.contentSize {
     height: 80px;
 }
 
-.priceFont{
+.priceFont {
     color: slateblue;
     font-size: 18px;
     font-weight: bold;
