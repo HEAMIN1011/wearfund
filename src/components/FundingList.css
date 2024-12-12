@@ -24,7 +24,7 @@
 
 .boxNav {
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     height: 100%;
     font-family: "Gowun Dodum", sans-serif;
@@ -34,7 +34,7 @@
 
 .white1 {
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: normal;
     margin-top: 5px;
     margin-bottom: 17px;
@@ -44,7 +44,7 @@
 
 .white2 {
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: normal;
     font-family: "Gowun Dodum", sans-serif;
     font-style: normal;
