@@ -17,24 +17,21 @@ function CommInfo() {
 
     return (
         <div>
-
-
-            <br /><br />
-
             <div className='bodywrap'>
                 <div className='infobody'>
-                    <h4>공지사항</h4><br />
-                    <h5 className='title'>{infopara.title}</h5><br />
+                    
+                    <h3 className='infoheader'>공지사항</h3>
+                    
+                    <h5 className='infott'>{infopara.title}</h5>
+                    <p className="infodt">{infopara.date}</p>
+                    
 
-                    <p className="date">{infopara.date}</p>
-                    <h6>공지사항</h6><br />
-
-                    <img src={infopara.imgPath}></img><p></p>
+                    <img className="infotopimg" src={infopara.imgPath}></img><p></p>
 
 
                     <p>{infopara.content}</p>
 
-                    <div>
+                    <div className='commwrap'>
                         <div className="commentcount"><span>댓글 0</span></div>
                         <div className="commentwrap">
                             <textarea readOnly placeholder="로그인이 필요합니다" className="commentbox"></textarea>
@@ -43,12 +40,8 @@ function CommInfo() {
                         ><FontAwesomeIcon icon={faPen} /> 댓글 달기</button></div>
                     </div>
                 </div>
-
-
             </div>
-
         </div>
-
     )
 }
 

@@ -30,7 +30,8 @@ function CommHome() {
 
         <div className='body'>
 
-            <h4 className='info-header'><span>공지사항</span></h4>
+            <h3 className='info-header'><span>공지사항</span></h3>
+            <p className='subheader'>Wearfund의 소식을 확인하세요 !</p>
             <div className='information'>
 
                 {info.map((item, index) => {
@@ -44,6 +45,7 @@ function CommHome() {
                                 <div className='date' ><span>{info[index].date}</span></div>
                                 <div className='writer'><span>퍼플펀딩</span></div>
                             </div>
+                            
                         </div>
 
                     )
@@ -53,7 +55,8 @@ function CommHome() {
             </div>
 
 
-            <h4 style={{ marginTop: "50px" }}>패션 블로그</h4>
+            <h3>패션 블로그</h3>
+            <p className='subheader'>클릭 시 해당 사이트로 이동할 수 있어요 !</p>
             <div>
                 <div className='Row-mar'>
                     {blog.map((item, index) => {
@@ -77,7 +80,8 @@ function CommHome() {
 
 
 
-            <h4><span>구매 후기</span></h4>
+            <h3><span>구매 후기</span></h3>
+            <p className='subheader'>클릭 시 자세한 리뷰를 볼 수 있어요 !</p>
             <div>
                 <div className='Row-mar'>
                     {review.map((item, index) => {
