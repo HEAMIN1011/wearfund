@@ -55,7 +55,7 @@ function CommHome() {
             </div>
 
 
-            <h3>패션 블로그</h3>
+            <h3 className='info-header'>패션 블로그</h3>
             <p className='subheader'>클릭 시 해당 사이트로 이동할 수 있어요 !</p>
             <div>
                 <div className='Row-mar'>
@@ -80,7 +80,7 @@ function CommHome() {
 
 
 
-            <h3><span>구매 후기</span></h3>
+            <h3 className='info-header'>구매 후기</h3>
             <p className='subheader'>클릭 시 자세한 리뷰를 볼 수 있어요 !</p>
             <div>
                 <div className='Row-mar'>
