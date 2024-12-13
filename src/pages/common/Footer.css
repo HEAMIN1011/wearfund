@@ -1,78 +1,52 @@
-/* Footer.css */
+/* Footer Styles */
 .footer {
-    background-color: #ffffff;
-    padding: 40px 0 20px;
-    margin-top: auto;
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  
-  .footer-section {
-    flex: 1;
-    margin: 0 15px;
-  }
-  
-  .footer-section h3 {
-    color: #a7a7a7;
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section a {
-    color: #666;
-    text-decoration: none;
-  }
-  
-  .footer-section a:hover {
-    color: #cacaca;
-  }
+  background-color: #ffffff;
+  padding: 20px 0 10px;
+  margin-top: auto;
+}
 
-  /* 기본 스타일 */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.footer-section h3 {
+  color: #a7a7a7;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li span {
+  margin-bottom: 10px;
+}
+
+.footer-section a,
 .footer-section span {
-  color: #666; /* 기본 색상 */
-  text-decoration: none; /* 밑줄 제거 */
-  cursor: pointer; /* 마우스 포인터 */
-  transition: color 0.2s ease-in-out; /* 색상 전환 애니메이션 */
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
 }
 
-/* 마우스 호버 상태 */
+.footer-section a:hover,
 .footer-section span:hover {
-  color: #cacaca; /* 호버 시 색상 */
+  color: #cacaca;
 }
 
-  
-  /* .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-  }
-   */
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-    }
-    
-    .footer-section {
-      margin: 20px 0;
-    }
-
-/* 모달 오버레이 */
+/* Modal Styles */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -88,7 +62,6 @@
   padding-top: 50px; /* 화면 상단과 약간의 여백 */
 }
 
-/* 모달 콘텐츠 */
 .modal-content {
   background: #fff;
   padding: 20px;
@@ -100,8 +73,6 @@
   margin: 0 auto; /* 수평 중앙 정렬 */
 }
 
-
-/* 닫기 버튼 */
 .close-button {
   position: absolute;
   top: 10px;
@@ -112,7 +83,6 @@
   cursor: pointer;
 }
 
-/* 링크 버튼 스타일 */
 .link-button {
   background: none;
   border: none;
@@ -123,20 +93,13 @@
   font-size: inherit;
 }
 
-.footer-section ul li span {
-  margin-bottom: 10px;
-}
-
-.footer-section span {
-  color: #666;
-  text-decoration: none;
-}
-
-
-
-
-
-
-
-
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
   }
+
+  .footer-section {
+    margin: 20px 0;
+  }
+}
