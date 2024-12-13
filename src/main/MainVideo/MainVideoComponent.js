@@ -21,7 +21,7 @@ const MainVideoComponent = () => {
       </video>
       <div className="KeyVisualVideo_inner">
         <strong className="KeyVisualVideo_title">
-          누구나 WEARFUON를 통해 할 수 있어요
+          누구나 WEARFUND를 통해 할 수 있어요
         </strong>
         <div className="KeyVisualVideo_buttonWrapper">
           <div className="ButtonStartProject_container">
