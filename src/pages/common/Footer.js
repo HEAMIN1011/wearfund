@@ -16,15 +16,19 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h3>프로젝트팀 정보</h3>
-          <p>팀명: wearfund project team</p>
-          <p>팀장: 김혜민</p>
-          <p>팀원: 곽한규, 김종범, 장현</p>
+          <span>팀명: wearfund project team</span>
+          <br/>
+          <span>팀장: 김혜민</span>
+          <br/>
+          <span>팀원: 곽한규, 김종범, 장현</span>
         </div>
         <div className="footer-section">
           <h3>고객센터</h3>
-          <p>전화: 1234-5678</p>
-          <p>이메일: support@example.com</p>
-          <p>운영시간: 09:00 - 18:00</p>
+          <span>전화: 1234-5678</span>
+          <br/>
+          <span>이메일: support@example.com</span>
+          <br/>
+          <span>운영시간: 09:00 - 18:00</span>
         </div>
         <div className="footer-section">
           <h3>바로가기</h3>
