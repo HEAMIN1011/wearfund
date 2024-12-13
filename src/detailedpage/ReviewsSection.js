@@ -15,39 +15,7 @@ function ReviewsSection() {
           className="story-image"
         />
         <p>{product.story}</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
-        <p>wearfund 화이팅!</p>
+
       </div>
     </div>
   );
