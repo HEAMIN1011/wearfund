@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wearfund/static/css/main.90ce14cb.css",
-    "main.js": "/wearfund/static/js/main.7c7c90e0.js",
+    "main.css": "/wearfund/static/css/main.c57614e3.css",
+    "main.js": "/wearfund/static/js/main.44404662.js",
     "static/media/Id004.jpg": "/wearfund/static/media/Id004.a3cb6e03cad9630c6ddf.jpg",
     "static/media/bd002.jpg": "/wearfund/static/media/bd002.8553d908c56c4d35c666.jpg",
     "static/media/bd003.jpg": "/wearfund/static/media/bd003.f3c2d9a147b46ae90b0d.jpg",
@@ -53,11 +53,11 @@
     "static/media/slick.ttf": "/wearfund/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/wearfund/index.html",
     "static/media/slick.woff": "/wearfund/static/media/slick.295183786cd8a1389865.woff",
-    "main.90ce14cb.css.map": "/wearfund/static/css/main.90ce14cb.css.map",
-    "main.7c7c90e0.js.map": "/wearfund/static/js/main.7c7c90e0.js.map"
+    "main.c57614e3.css.map": "/wearfund/static/css/main.c57614e3.css.map",
+    "main.44404662.js.map": "/wearfund/static/js/main.44404662.js.map"
   },
   "entrypoints": [
-    "static/css/main.90ce14cb.css",
-    "static/js/main.7c7c90e0.js"
+    "static/css/main.c57614e3.css",
+    "static/js/main.44404662.js"
   ]
 }
