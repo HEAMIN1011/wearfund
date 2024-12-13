@@ -4,7 +4,7 @@ import CommHome from './CommPages/CommHome.js';
 import ListCard from './components/ListCard';
 import FundingList from './components/FundingList';
 import CartPage from './components/CartPage';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./pages/common/Header";
 import Footer from "./pages/common/Footer";
 import HomePage from "./pages/HomePage";
@@ -23,7 +23,7 @@ import CommInfo from './CommPages/CommInfo.js';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="app-container">
         <Header />
         <Routes>
@@ -42,7 +42,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
